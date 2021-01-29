@@ -8,12 +8,20 @@
 </head>
 
 <body>
-    <h1></h1>
-    <!-- [ {title: "abc", image: "", paragraf: ""}, {}, {}] -->
-</body>
+    <h1>Anonym News</h1>
+    <h3>selamat datang di situs berita
+        <br>terlengkap dan terupdate sekecamatan
+    </h3>
 
-<< /body>
-    << /body>
-        << /body>
+    <% for( let i=0; i < news.length; i++ ) { %>
+        <p>
+            <a href="<%= news[i] %> ">
+                <%= news[i] %>
+            </a>
+            <% } %>
+        </p>
+
+        <!-- [ {title: "abc", image: "", paragraf: ""}, {}, {}] -->
+</body>
 
 </html>
