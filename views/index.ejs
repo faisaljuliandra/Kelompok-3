@@ -8,21 +8,25 @@
 </head>
 
 <body>
-    <h1>Anonym News</h1>
-    <h3>Selamat datang di situs berita No.1
-        <br><i>terlengkap</i> dan <i>terupdate</i> di SYNRGY Academy
+    <h1>Selamat Datang
+        <br>di trinews
+    </h1>
+
+    <h3>Situs berita No.1
+        <br>terlengkap dan terupdate
+        <br>di SYNRGY Academy
     </h3>
-    <h5>
-        <%= counter %> kali dikunjungi pada hari ini
-    </h5>
 
     <% for( let i=0; i < news.length; i++ ) { %>
         <p>
-            <a href="<%= news[i] %> ">
-                <%= news[i] %>
+            <a href="<%= news[i] %>">
+                <%= title[i] %>
             </a>
             <% } %>
         </p>
+        <h5>
+            <%= counter %> kali dikunjungi pada hari ini
+        </h5>
 
         <!-- [ {title: "abc", image: "", paragraf: ""}, {}, {}] -->
 </body>

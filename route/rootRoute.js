@@ -5,7 +5,18 @@ let counter = 1
 
 app.get('/', (req, res) => {
     res.render('index', {
-        news: ['nbencana', 'nekonomi', 'ngosip', 'nolahraga'],
+        news: [
+            'nbencana',
+            'nekonomi',
+            'ngosip',
+            'nolahraga'
+        ],
+        title: [
+            'Erupsi Gunung Merapi',
+            'Saham-saham di indonesia Merosot',
+            'Nasib Hubungan Amanda Manopo dan Billy Syahputra',
+            'Badminton Indonesia Kembali Meraih Kemenangan'
+        ],
         counter: counter
     })
     counter++
