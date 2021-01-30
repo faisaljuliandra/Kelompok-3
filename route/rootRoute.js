@@ -1,10 +1,14 @@
 const express = require('express')
 const app = express.Router();
 
+let counter = 1
+
 app.get('/', (req, res) => {
     res.render('index', {
-        news: ['nbencana', 'nekonomi', 'ngosip', 'nolahraga']
+        news: ['nbencana', 'nekonomi', 'ngosip', 'nolahraga'],
+        counter: counter
     })
+    counter++
 })
 
 app.get('/nbencana', (req, res) => {
