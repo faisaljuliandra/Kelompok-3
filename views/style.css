@@ -3,3 +3,29 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.navbar-brand img {
+    max-height: 80px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #071C4D;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #071C4D !important;
+}
+
+.nav-item {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.section-footer {
+    color: #071c4d;
+}
+
+h5 {
+    text-decoration: underline;
+}
