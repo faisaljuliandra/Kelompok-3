@@ -23,36 +23,38 @@
             <%= counter %> kali dikunjungi pada hari ini
         </h5>
 
-
-
         <div class="row padded-block">
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-6 no-pads">
                         <% for( let i=0; i < image.length; i++ ) { %>
-                            <img src="<%= image[i] %> ">
+                            <img src="<%= image[i] %>" width="300px">
                             <% } %>
                     </div>
-                    <div class="col-md-6 padded-text">
+                    <div class="col-md-6 no-pads">
                         <% for( let j=0; j < news.length; j++ ) { %>
+                            <a href="<%= news[j] %>">
+                                <%= title[j] %>
+                            </a>
+                            <br>
                             <p>
-                                <a href="<%= news[j] %>">
-                                    <%= title[j] %>
-                                </a>
-                                <% } %>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Officiis minus impedit quas, voluptates veritatis
+                                debitis libero aperiam facilis aliquam saepe accusamus minima
+                                in amet laboriosam, sint natus dolorum expedita nulla. apasih
+                                fdjghjkdfhg jfhdjfhjdsfhk fhdjhfjksd.
                             </p>
+                            <br>
+                            <br>
                             <% } %>
-                                <p>Velit voluptatibus et repudiandae.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2"></div>
+            <!-- akhir bio -->
+            <br><br><br>
         </div>
-
         <%- include('footer') %>
-
-            <!-- [ {title: "abc", image: "", paragraf: ""}, {}, {}] -->
 </body>
 
 </html>
