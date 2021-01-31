@@ -19,19 +19,40 @@
             <br>di SYNRGY Academy
         </h3>
 
-        <% for( let i=0; i < news.length; i++ ) { %>
-            <p>
-                <a href="<%= news[i] %>">
-                    <%= title[i] %>
-                </a>
-                <% } %>
-            </p>
-            <h5>
-                <%= counter %> kali dikunjungi pada hari ini
-            </h5>
-            <%- include('footer') %>
+        <h5>
+            <%= counter %> kali dikunjungi pada hari ini
+        </h5>
 
-                <!-- [ {title: "abc", image: "", paragraf: ""}, {}, {}] -->
+
+
+        <div class="row padded-block">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6 no-pads">
+                        <% for( let i=0; i < image.length; i++ ) { %>
+                            <img src="<%= image[i] %> ">
+                            <% } %>
+                    </div>
+                    <div class="col-md-6 padded-text">
+                        <% for( let j=0; j < news.length; j++ ) { %>
+                            <p>
+                                <a href="<%= news[j] %>">
+                                    <%= title[j] %>
+                                </a>
+                                <% } %>
+                            </p>
+                            <% } %>
+                                <p>Velit voluptatibus et repudiandae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <%- include('footer') %>
+
+            <!-- [ {title: "abc", image: "", paragraf: ""}, {}, {}] -->
 </body>
 
 </html>
