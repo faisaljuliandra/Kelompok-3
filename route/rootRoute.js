@@ -22,22 +22,6 @@ app.get('/', (req, res) => {
     counter++
 })
 
-app.get('/nbencana', (req, res) => {
-    res.render('nbencana')
-})
-
-app.get('/nekonomi', (req, res) => {
-    res.render('nekonomi')
-})
-
-app.get('/ngosip', (req, res) => {
-    res.render('ngosip')
-})
-
-app.get('/nolahraga', (req, res) => {
-    res.render('nolahraga')
-})
-
 app.get('/:path', (req, res) => {
     res.render(req.params.path, {}, (err, html) => {
         if (err) {

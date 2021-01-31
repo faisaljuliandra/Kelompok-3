@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Trinews Site</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Home Page</title>
-</head>
-
-<body>
+  <body>
     <%- include('header') %>
-        <h1>Selamat Datang
-            <br>di trinews
-        </h1>
+    <h1>
+      Selamat Datang <br />
+      di Trinews
+    </h1>
 
-        <h3>Situs berita No.1
-            <br>terlengkap dan terupdate
-            <br>di SYNRGY Academy
-        </h3>
+    <h3>
+      Situs berita No.1 <br />terlengkap dan terupdate <br />di SYNRGY Academy
+    </h3>
 
-        <% for( let i=0; i < news.length; i++ ) { %>
+    <div class="row padded-block">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6 no-pads">
+            <% for( let i=0; i < news.length; i++ ) { %>
             <p>
-                <a href="<%= news[i] %>">
-                    <%= title[i] %>
-                </a>
-                <% } %>
+              <a href="<%= news[i] %>" class="link-news"> <%= title[i] %> </a>
+              <% } %>
             </p>
-            <h5>
-                <%= counter %> kali dikunjungi pada hari ini
-            </h5>
-            <%- include('footer') %>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                <!-- [ {title: "abc", image: "", paragraf: ""}, {}, {}] -->
-</body>
+    <h5><%= counter %> kali dikunjungi pada hari ini</h5>
+    <%- include('footer') %>
 
+    <!-- [ {title: "abc", image: "", paragraf: ""}, {}, {}] -->
+  </body>
 </html>

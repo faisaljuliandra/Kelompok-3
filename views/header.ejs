@@ -3,18 +3,47 @@
 
 <!--Navbar-->
 <div class="container">
-  <nav class="row navbar navbar-expand-lg navbar-light bg-white">
-    <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
-      <a href="#" class="navbar-brand">
-        <img src="logo.jpg" alt="" />
-      </a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="navbar-nav mr-auto">
+      <a href="/" class="navbar-brand"> <img src="logo.jpg" alt="" /> </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navb">
+        <ul class="navbar-nav mt-5">
+          <li class="nav-item mx-md-2">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a href="about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+            >
+              News
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Olahraga</a>
+              <a class="dropdown-item" href="#">Teknologi</a>
+              <a class="dropdown-item" href="#">Asmara</a>
+              <a class="dropdown-item" href="#">Bencana Alam</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-    <ul class="navbar-nav mr-auto d-none d-lg-block">
-      <li>
-        <span class="text-muted">
-          | &nbsp; Serve an Updated and Accurated News
-        </span>
-      </li>
-    </ul>
   </nav>
 </div>
