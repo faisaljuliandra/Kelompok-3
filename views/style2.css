@@ -4,16 +4,73 @@ body {
     text-align: center;
 }
 
-.parallax {
-  background-image: url("newstypo.jpg");
-
-  height: 300px;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: #071c4d;
 }
+
+h4 {
+    font-family: Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
+    font-weight: 900;
+    color: #071c4d;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #071c4d;
+    text-align: justify;
+}
+
+.parallax {
+    background-image: url("newstypo.jpg");
+
+    height: 300px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 {
+    background-image: url("news1.jpeg");
+
+    height: 300px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bencana {
+    background-image: url("erupsi-gunung-merapi.jpeg");
+    height: 500px;
+    background-size: cover;
+}
+
+.asmara {
+    background-image: url("amandaBilly.jpg");
+    height: 500px;
+    background-size: cover;
+}
+
+.saham {
+    background-image: url("saham.jpg");
+    height: 500px;
+    background-size: cover;
+}
+
+.badminton {
+    background-image: url("badminton.jpg");
+    height: 500px;
+    background-size: cover;
+}
+
 
 .caption {
     position: absolute;
@@ -21,7 +78,7 @@ body {
     top: 50%;
     width: 100%;
     text-align: center;
-    color: #000;
+    color: #071c4d;
 }
 
 .caption span.border {

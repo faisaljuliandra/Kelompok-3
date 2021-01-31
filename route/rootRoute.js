@@ -17,6 +17,12 @@ app.get('/', (req, res) => {
             'Nasib Hubungan Amanda Manopo dan Billy Syahputra',
             'Badminton Indonesia Kembali Meraih Kemenangan'
         ],
+        image: [
+            'erupsi-gunung-merapi.jpeg',
+            'saham.jpg',
+            'amandaBilly.jpg',
+            'Badminton.jpg'
+        ],
         counter: counter
     })
     counter++

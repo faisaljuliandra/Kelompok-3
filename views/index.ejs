@@ -9,32 +9,48 @@
 
   <body>
     <%- include('header') %>
-    <h1>
-      Selamat Datang <br />
-      di Trinews
-    </h1>
 
-    <h3>
-      Situs berita No.1 <br />terlengkap dan terupdate <br />di SYNRGY Academy
-    </h3>
-
-    <div class="row padded-block">
-      <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-6 no-pads">
-            <% for( let i=0; i < news.length; i++ ) { %>
-            <p>
-              <a href="<%= news[i] %>" class="link-news"> <%= title[i] %> </a>
-              <% } %>
-            </p>
-          </div>
-        </div>
+    <div class="parallax-2">
+      <div class="caption">
+        <span class="border">Selamat Datang di Trinews</span>
       </div>
     </div>
 
-    <h5><%= counter %> kali dikunjungi pada hari ini</h5>
+    <div class="container pt-5 pb-5 mt-5 mb-4 border-top border-bottom">
+      <h3 class="">Situs berita terlengkap dan terupdate di SYNRGY Academy</h3>
+    </div>
+    <div class="row padded-block">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6 no-pads border">
+            <% for( let i=0; i < image.length; i++ ) { %>
+            <img src="<%= image[i] %>" width="300px" />
+            <% } %>
+          </div>
+          <div class="col-md-6 no-pads border">
+            <% for( let j=0; j < news.length; j++ ) { %>
+            <a href="<%= news[j] %>"> <%= title[j] %> </a>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+              minus impedit quas, voluptates veritatis debitis libero aperiam
+              facilis aliquam saepe accusamus minima in amet laboriosam, sint
+              natus dolorum expedita nulla. apasih fdjghjkdfhg jfhdjfhjdsfhk
+              fhdjhfjksd.
+            </p>
+            <br />
+            <br />
+            <% } %>
+          </div>
+        </div>
+      </div>
+      <!-- akhir bio -->
+      <h4 class="mt-5 mb-3">
+        Anda telah mengunjungi Trinews sebanyak <%= counter %> kali pada hari
+        ini
+      </h4>
+    </div>
     <%- include('footer') %>
-
-    <!-- [ {title: "abc", image: "", paragraf: ""}, {}, {}] -->
   </body>
 </html>

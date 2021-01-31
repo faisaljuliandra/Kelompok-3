@@ -21,3 +21,11 @@ body {
     font-size: larger;
     font-weight: bold;
 }
+
+.section-footer {
+    color: #071c4d;
+}
+
+h5 {
+    text-decoration: underline;
+}
