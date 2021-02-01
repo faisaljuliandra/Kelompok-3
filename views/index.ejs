@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="icon" href="trinews_favicon.jpg" />
+    <title>Trinews Site</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style2.css" />
-  <link rel="icon" href="trinews_favicon.jpg">
-  <title>Trinews Site</title>
-</head>
-
-<body>
-  <%- include('header') %>
+  <body>
+    <%- include('header') %>
 
     <div class="parallax-2">
       <div class="caption">
@@ -18,42 +17,46 @@
       </div>
     </div>
 
-    <div class="container pt-5 pb-5 mt-5 mb-4 border-top border-bottom">
+    <div class="container pt-5 pb-5 mt-5 mb-4">
       <h3 class="">Situs berita terlengkap dan terupdate di SYNRGY Academy</h3>
     </div>
-    <div class="row padded-block">
+    <div class="row padded-block border">
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <div class="row">
-          <div class="col-md-6 no-pads border">
+          <div class="col-md-6 no-pads">
             <% for( let i=0; i < image.length; i++ ) { %>
-              <img src="<%= image[i] %>" width="300px" />
-              <% } %>
+            <img
+              src="<%= image[i] %>"
+              width="300px"
+              class="img-index img-thumbnail mb-3 mt-3 img-fluid"
+            />
+            <% } %>
           </div>
-          <div class="col-md-6 no-pads border">
+          <div class="col-md-6 no-pads mt-4">
             <% for( let j=0; j < news.length; j++ ) { %>
-              <a href="<%= news[j] %>">
-                <%= title[j] %>
-              </a>
-              <br />
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                minus impedit quas, voluptates veritatis debitis libero aperiam
-                facilis aliquam saepe accusamus minima in amet laboriosam, sint
-                natus dolorum expedita nulla.
-              </p>
-              <br />
-              <% } %>
+            <a href="<%= news[j] %>" class="list-news mb-4 mt-4">
+              <%= title[j] %></a
+            >
+            <br />
+            <p class="p-index mb-3 mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+              minus impedit quas, voluptates veritatis debitis libero aperiam
+              facilis aliquam saepe accusamus minima in amet laboriosam, sint
+              natus dolorum expedita nulla. Dolor dolores quo sunt provident
+              fugiat officiis nesciunt deleniti.
+            </p>
+            <br />
+            <% } %>
           </div>
         </div>
       </div>
-      <!-- akhir bio -->
-      <h4 class="mt-5 mb-3">
-        Anda telah mengunjungi Trinews sebanyak <%= counter %> kali pada hari
-          ini
-      </h4>
     </div>
-    <%- include('footer') %>
-</body>
 
+    <!-- akhir bio -->
+    <h6 class="mt-5 mb-3">
+      Anda telah mengunjungi Trinews sebanyak <%= counter %> kali pada hari ini
+    </h6>
+    <%- include('footer') %>
+  </body>
 </html>

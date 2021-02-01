@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
         ],
         title: [
             'Erupsi Gunung Merapi',
-            'Saham-saham di indonesia Merosot',
+            'Saham-Saham di Indonesia Merosot',
             'Nasib Hubungan Amanda Manopo dan Billy Syahputra',
             'Badminton Indonesia Kembali Meraih Kemenangan'
         ],
